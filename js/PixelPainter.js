@@ -1,4 +1,24 @@
 console.log('sanity js')
+// Title div
+const title = document.createElement('div');
+title.id = 'title';
+document.body.appendChild(title);
+title.innerHTML = 'working title'
+
+const headers = document.createElement('div');
+headers.id = 'headers';
+document.body.appendChild(headers);
+
+const swatchHeader = document.createElement('div');
+swatchHeader.id = 'swatchHeader';
+headers.appendChild(swatchHeader);
+swatchHeader.innerHTML = 'swaaaatch'
+
+const canvasHeader = document.createElement('div');
+canvasHeader.id = 'canvasHeader';
+headers.appendChild(canvasHeader);
+canvasHeader.innerHTML = 'canvas';
+
 
 const swatchSection = document.createElement('div');
 swatchSection.id = 'swatch';
@@ -7,6 +27,12 @@ document.body.appendChild(swatchSection);
 const canvasSection = document.createElement('div');
 canvasSection.id = 'canvas';
 document.body.appendChild(canvasSection);
+
+
+
+
+
+
 
 let store;
 
@@ -24,8 +50,25 @@ function canvas(cell) {
   let canvasColor = cell.addEventListener("click", function () {
     cell.style.backgroundColor = store
   })
+  }
 
+let erase = document.createElement('button');
+erase.id = 'erase';
+document.body.appendChild(erase);
+erase.innerHTML = 'ERASE';
+
+//let clear = document.createElement()
+
+
+
+function backToWhite(event){
+  changeBackgroundColor('#ffff',e.target);
 }
+
+function changeByColor(color,target){
+  document.querySelectorAll('#canvas .cell').style.backgroundColor = color;
+}
+
 
 
 function getRandomColor() {
