@@ -57,18 +57,24 @@ erase.id = 'erase';
 document.body.appendChild(erase);
 erase.innerHTML = 'ERASE';
 
-//let clear = document.createElement()
+let clear = document.createElement('button');
+clear.id = 'clear';
+document.body.appendChild(clear)
+clear.innerHTML = 'CLEAR';
 
+clear.addEventListener("click", backToWhite);
 
 
 function backToWhite(event){
-  changeBackgroundColor('#ffff',e.target);
+  const cells = document.querySelectorAll('#canvas .cell');
+  for (let i=0; i<cells.length-1; i++){
+    changeBgColor('#FFF', cells[i]);
+  }
 }
 
-function changeByColor(color,target){
-  document.querySelectorAll('#canvas .cell').style.backgroundColor = color;
+function changeBgColor(color, target){
+  target.style.backgroundColor = color;
 }
-
 
 
 function getRandomColor() {
