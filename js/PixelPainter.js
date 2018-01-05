@@ -52,10 +52,21 @@ function canvas(cell) {
   })
   }
 
+
+
+
 let erase = document.createElement('button');
 erase.id = 'erase';
 document.body.appendChild(erase);
 erase.innerHTML = 'ERASE';
+
+erase.addEventListener('click',function(){
+  store = '#FFF'
+});
+
+
+
+
 
 let clear = document.createElement('button');
 clear.id = 'clear';
@@ -63,7 +74,6 @@ document.body.appendChild(clear)
 clear.innerHTML = 'CLEAR';
 
 clear.addEventListener("click", backToWhite);
-
 
 function backToWhite(event){
   const cells = document.querySelectorAll('#canvas .cell');
