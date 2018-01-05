@@ -13,7 +13,7 @@
   width: 330px;
   display: flex;
   float: right;
-  margin-right: 700px;
+  margin-right: 1200px;
 }
 #swatch{
   margin-left: 100px;
@@ -21,9 +21,10 @@
   width: 150px;
   display:flex;
   float: left;
+  
 }
 .container{
-  border: 3px solid black;
+  
 }
 h1{
   color: white;
@@ -34,9 +35,14 @@ h1{
   padding-bottom: 50px;
 }
 #swatchHeader{
-  padding-left: 120px;
-  font: Book Antiqua;
+  font-size: 200%;
+  padding-left: 110px;
+  float: left;
 }
 #canvasHeader{
-  padding-left: 450px;
+  font-size: 200%;
+  padding-left: 360px;
+}
+#ERASE{
+  margin-left: 185px;
 }
