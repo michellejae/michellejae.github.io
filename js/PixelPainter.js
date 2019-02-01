@@ -1,4 +1,3 @@
-console.log('sanity js')
 const title = document.createElement('div');
 title.id = 'title';
 document.body.appendChild(title);
@@ -52,11 +51,11 @@ function canvas(cell) {
   cell.addEventListener("click", function () {
     cell.style.backgroundColor = store
   })
-  cell.addEventListener('mouseover', function () {
-    if (mouse) {
-      cell.style.backgroundColor = store;
-    }
-  })
+  // cell.addEventListener('mouseover', function () {
+  //   if (mouse) {
+  //     cell.style.backgroundColor = store;
+  //   }
+  // })
 }
 
 
@@ -96,18 +95,6 @@ function getRandomColor() {
   }
   return color;
 }
-
-
-// let drag = document.createElement('button');
-// drag.id = 'drag';
-// document.body.appendChild(drag);
-// drag.innerHTML = 'drag';
-// drag.addEventListener('click',test);
-
-// function test(){
-//   mouse = true;
-//   console.log(mouse);
-// }
 
 
 //create grid
