@@ -51,7 +51,6 @@ function swatch(cell) {
   //save color
   let swatchClick = cell.addEventListener("click", function () {
     store = cell.style.backgroundColor
-    console.log('color', store)
   })
 }
 
@@ -139,4 +138,4 @@ function handleMouseUp() {
   mouse = false;
 }
 createGrid(20, 20, swatchSection, swatch);
-createGrid(30, 30, canvasSection, canvas);
+createGrid(25, 25, canvasSection, canvas);
