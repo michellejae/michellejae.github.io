@@ -55,7 +55,23 @@ function swatch(cell) {
   })
 }
 
-let mouse = false;
+function remix(event){
+  
+  const cellTwo = document.querySelectorAll('#swatchSection .cell')
+  for (let j=0; j<cellTwo.length; j++){
+    let randomColor = getRandomColor();
+    cellTwo[j].style.backgroundColor = randomColor
+  }
+  
+}
+
+// function backToWhite(event) {
+//   const cells = document.querySelectorAll('#canvasSection .cell');
+//   for (let i = 0; i < cells.length - 1; i++) {
+//     changeBgColor('#FFF', cells[i]);
+//   }
+// }
+
 
 //color
 function canvas(cell) {
@@ -70,6 +86,11 @@ function canvas(cell) {
 }
 
 //remix
+let remixButton = document.createElement('button');
+remixButton.id = 'remixButton';
+buttonContainer.appendChild(remixButton)
+remixButton.innerHTML = 'REMIX';
+remixButton.addEventListener('click', remix)
 
 
 
@@ -90,7 +111,6 @@ clear.innerHTML = 'CLEAR';
 clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
-  console.log('do i get here?')
   const cells = document.querySelectorAll('#canvasSection .cell');
   for (let i = 0; i < cells.length - 1; i++) {
     changeBgColor('#FFF', cells[i]);
