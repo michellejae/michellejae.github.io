@@ -1,10 +1,16 @@
+// const bigBoy = document.createElement('div')
+
 const badBoy = document.createElement('div');
 badBoy.id = 'badBoy';
 document.body.appendChild(badBoy);
 
+const titleContainer = document.createElement('div');
+titleContainer.id = 'titleContainer';
+badBoy.appendChild(titleContainer)
+
 const title = document.createElement('div');
 title.id = 'title';
-badBoy.appendChild(title);
+titleContainer.appendChild(title);
 title.innerHTML = 'working title'
 
 const contentContainers = document.createElement('div');
@@ -61,20 +67,20 @@ function canvas(cell) {
 
 
 //erase
-let erase = document.createElement('button');
-erase.id = 'erase';
-document.body.appendChild(erase);
-erase.innerHTML = 'ERASE';
-erase.addEventListener('click', function () {
-  store = '#FFF'
-});
+// let erase = document.createElement('button');
+// erase.id = 'erase';
+// document.body.appendChild(erase);
+// erase.innerHTML = 'ERASE';
+// erase.addEventListener('click', function () {
+//   store = '#FFF'
+// });
 
 //clear
-let clear = document.createElement('button');
-clear.id = 'clear';
-document.body.appendChild(clear)
-clear.innerHTML = 'CLEAR';
-clear.addEventListener("click", backToWhite);
+// let clear = document.createElement('button');
+// clear.id = 'clear';
+// document.body.appendChild(clear)
+// clear.innerHTML = 'CLEAR';
+// clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
   const cells = document.querySelectorAll('#canvas .cell');
@@ -128,5 +134,5 @@ function handleMouseDown() {
 function handleMouseUp() {
   mouse = false;
 }
-createGrid(10, 10, swatchSection, swatch);
-createGrid(20, 20, canvasSection, canvas);
+createGrid(20, 20, swatchSection, swatch);
+createGrid(30, 30, canvasSection, canvas);
