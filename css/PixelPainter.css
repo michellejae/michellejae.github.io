@@ -49,17 +49,14 @@ body{
 
 #title{
   font-size: 50px;
-  /* padding-left: 200px;
-  padding-bottom: 50px; */
 }
-/* #swatchHeader{
-  font-size: 200%;
-  padding-left: 110px;
-  float: left;
+#swatchHeader{
+  font-size: 15px;
+
 }
 #canvasHeader{
-  font-size: 200%;
-  padding-left: 360px; */
+  font-size: 15px;
+
 }
 #ERASE{
   margin-left: 185px;

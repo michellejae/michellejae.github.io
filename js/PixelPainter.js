@@ -18,25 +18,25 @@ contentContainers.id = 'contentContainers'
 badBoy.appendChild(contentContainers)
 
 const swatchSection = document.createElement('div');
-swatchSection.id = 'swatch';
+swatchSection.id = 'swatchSwection';
 contentContainers.appendChild(swatchSection);
 
 const canvasSection = document.createElement('div');
-canvasSection.id = 'canvas';
+canvasSection.id = 'canvasSection';
 canvasSection.addEventListener('mousedown', handleMouseDown)
 canvasSection.addEventListener('mouseup', handleMouseUp)
 contentContainers.appendChild(canvasSection);
 
 
-// const swatchHeader = document.createElement('div');
-// swatchHeader.id = 'swatchHeader';
-// swatchSection.appendChild(swatchHeader);
-// swatchHeader.innerHTML = 'swaaaatch'
+const swatchHeader = document.createElement('div');
+swatchHeader.id = 'swatchHeader';
+swatchSection.appendChild(swatchHeader);
+swatchHeader.innerHTML = 'swaaaatch'
 
-// const canvasHeader = document.createElement('div');
-// canvasHeader.id = 'canvasHeader';
-// canvasSection.appendChild(canvasHeader);
-// canvasHeader.innerHTML = 'get yo paint on';
+const canvasHeader = document.createElement('div');
+canvasHeader.id = 'canvasHeader';
+canvasSection.appendChild(canvasHeader);
+canvasHeader.innerHTML = 'get yo paint on';
 
 
 //set the colors in swatch
@@ -66,21 +66,21 @@ function canvas(cell) {
 }
 
 
-//erase
-// let erase = document.createElement('button');
-// erase.id = 'erase';
-// document.body.appendChild(erase);
-// erase.innerHTML = 'ERASE';
-// erase.addEventListener('click', function () {
-//   store = '#FFF'
-// });
+// erase
+let erase = document.createElement('button');
+erase.id = 'erase';
+document.body.appendChild(erase);
+erase.innerHTML = 'ERASE';
+erase.addEventListener('click', function () {
+  store = '#FFF'
+});
 
-//clear
-// let clear = document.createElement('button');
-// clear.id = 'clear';
-// document.body.appendChild(clear)
-// clear.innerHTML = 'CLEAR';
-// clear.addEventListener("click", backToWhite);
+// clear
+let clear = document.createElement('button');
+clear.id = 'clear';
+document.body.appendChild(clear)
+clear.innerHTML = 'CLEAR';
+clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
   const cells = document.querySelectorAll('#canvas .cell');
