@@ -18,7 +18,7 @@ contentContainers.id = 'contentContainers'
 badBoy.appendChild(contentContainers)
 
 const swatchSection = document.createElement('div');
-swatchSection.id = 'swatchSwection';
+swatchSection.id = 'swatchSection';
 contentContainers.appendChild(swatchSection);
 
 const canvasSection = document.createElement('div');
@@ -37,6 +37,10 @@ const canvasHeader = document.createElement('div');
 canvasHeader.id = 'canvasHeader';
 canvasSection.appendChild(canvasHeader);
 canvasHeader.innerHTML = 'get yo paint on';
+
+const buttonContainer = document.createElement('div');
+buttonContainer.id = 'buttonContainer';
+swatchSection.appendChild(buttonContainer)
 
 
 //set the colors in swatch
@@ -69,7 +73,7 @@ function canvas(cell) {
 // erase
 let erase = document.createElement('button');
 erase.id = 'erase';
-document.body.appendChild(erase);
+buttonContainer.appendChild(erase);
 erase.innerHTML = 'ERASE';
 erase.addEventListener('click', function () {
   store = '#FFF'
@@ -78,7 +82,7 @@ erase.addEventListener('click', function () {
 // clear
 let clear = document.createElement('button');
 clear.id = 'clear';
-document.body.appendChild(clear)
+buttonContainer.appendChild(clear)
 clear.innerHTML = 'CLEAR';
 clear.addEventListener("click", backToWhite);
 
