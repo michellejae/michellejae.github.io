@@ -42,6 +42,7 @@ const buttonContainer = document.createElement('div');
 buttonContainer.id = 'buttonContainer';
 swatchSection.appendChild(buttonContainer)
 
+let store;
 
 //set the colors in swatch
 function swatch(cell) {
@@ -86,7 +87,7 @@ clear.innerHTML = 'CLEAR';
 clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
-  const cells = document.querySelectorAll('#canvas .cell');
+  const cells = document.querySelectorAll('#canvasSection .cell');
   for (let i = 0; i < cells.length - 1; i++) {
     changeBgColor('#FFF', cells[i]);
   }
