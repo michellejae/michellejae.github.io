@@ -1,11 +1,15 @@
+const badBoy = document.createElement('div');
+badBoy.id = 'badBoy';
+document.body.appendChild(badBoy);
+
 const title = document.createElement('div');
 title.id = 'title';
-document.body.appendChild(title);
+badBoy.appendChild(title);
 title.innerHTML = 'working title'
 
 const headers = document.createElement('div');
 headers.id = 'headers';
-document.body.appendChild(headers);
+badBoy.appendChild(headers);
 
 const swatchHeader = document.createElement('div');
 swatchHeader.id = 'swatchHeader';
@@ -20,13 +24,13 @@ canvasHeader.innerHTML = 'get yo paint on';
 
 const swatchSection = document.createElement('div');
 swatchSection.id = 'swatch';
-document.body.appendChild(swatchSection);
+badBoy.appendChild(swatchSection);
 
 const canvasSection = document.createElement('div');
 canvasSection.id = 'canvas';
 canvasSection.addEventListener('mousedown', handleMouseDown)
 canvasSection.addEventListener('mouseup', handleMouseUp)
-document.body.appendChild(canvasSection);
+badBoy.appendChild(canvasSection);
 
 
 //global variable for color
@@ -116,7 +120,7 @@ function createGrid(x, y, section, choice) {
       //choice = swatch/canvas
       choice(cell);
     }
-  }
+  } 
   section.appendChild(container)
 }
 
