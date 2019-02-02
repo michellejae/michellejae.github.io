@@ -7,34 +7,31 @@ title.id = 'title';
 badBoy.appendChild(title);
 title.innerHTML = 'working title'
 
-const headers = document.createElement('div');
-headers.id = 'headers';
-badBoy.appendChild(headers);
-
-const swatchHeader = document.createElement('div');
-swatchHeader.id = 'swatchHeader';
-headers.appendChild(swatchHeader);
-swatchHeader.innerHTML = 'swaaaatch'
-
-const canvasHeader = document.createElement('div');
-canvasHeader.id = 'canvasHeader';
-headers.appendChild(canvasHeader);
-canvasHeader.innerHTML = 'get yo paint on';
-
+const contentContainers = document.createElement('div');
+contentContainers.id = 'contentContainers'
+badBoy.appendChild(contentContainers)
 
 const swatchSection = document.createElement('div');
 swatchSection.id = 'swatch';
-badBoy.appendChild(swatchSection);
+contentContainers.appendChild(swatchSection);
 
 const canvasSection = document.createElement('div');
 canvasSection.id = 'canvas';
 canvasSection.addEventListener('mousedown', handleMouseDown)
 canvasSection.addEventListener('mouseup', handleMouseUp)
-badBoy.appendChild(canvasSection);
+contentContainers.appendChild(canvasSection);
 
 
-//global variable for color
-let store;
+// const swatchHeader = document.createElement('div');
+// swatchHeader.id = 'swatchHeader';
+// swatchSection.appendChild(swatchHeader);
+// swatchHeader.innerHTML = 'swaaaatch'
+
+// const canvasHeader = document.createElement('div');
+// canvasHeader.id = 'canvasHeader';
+// canvasSection.appendChild(canvasHeader);
+// canvasHeader.innerHTML = 'get yo paint on';
+
 
 //set the colors in swatch
 function swatch(cell) {
