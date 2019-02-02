@@ -87,8 +87,10 @@ clear.innerHTML = 'CLEAR';
 clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
+  console.log('do i get here?')
   const cells = document.querySelectorAll('#canvasSection .cell');
   for (let i = 0; i < cells.length - 1; i++) {
+    console.log('or here? ')
     changeBgColor('#FFF', cells[i]);
   }
 }
