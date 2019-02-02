@@ -30,7 +30,10 @@ body{
 }
 
 #title{
-  font-size: 50px;
+  font-size: 3.75em;
+  font-family: Impact;
+  color: rgba(116, 112, 112, 0.733);
+  letter-spacing: 2px;
 }
 
 #swatchSection{
@@ -48,16 +51,15 @@ body{
   order: 3;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 #erase, #clear{
   height: 40px;
   width: 65px;
-  margin: 5px;
-}
-
-#erase{
-  margin-top:10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
 }
 
 
@@ -72,9 +74,6 @@ body{
   width: 15px;
 }
 
-#title{
-  font-size: 3.75em;
-}
 #swatchHeader{
   font-size: 15px;
   order: 1;
