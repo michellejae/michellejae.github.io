@@ -36,7 +36,7 @@ swatchHeader.innerHTML = 'swaaaatch'
 const canvasHeader = document.createElement('div');
 canvasHeader.id = 'canvasHeader';
 canvasSection.appendChild(canvasHeader);
-canvasHeader.innerHTML = 'get yo paint on';
+canvasHeader.innerHTML = 'and canvas';
 
 const buttonContainer = document.createElement('div');
 buttonContainer.id = 'buttonContainer';
@@ -69,6 +69,9 @@ function canvas(cell) {
   // })
 }
 
+//remix
+
+
 
 // erase
 let erase = document.createElement('button');
@@ -90,7 +93,6 @@ function backToWhite(event) {
   console.log('do i get here?')
   const cells = document.querySelectorAll('#canvasSection .cell');
   for (let i = 0; i < cells.length - 1; i++) {
-    console.log('or here? ')
     changeBgColor('#FFF', cells[i]);
   }
 }
@@ -120,18 +122,17 @@ function createGrid(x, y, section, choice) {
     let row = document.createElement('div');
     row.className = 'row';
     container.appendChild(row);
-    row.innerHTML;
 
     for (let j = 0; j < y; j++) {
       let cell = document.createElement('div');
       cell.className = 'cell';
       row.appendChild(cell);
-      //choice = swatch/canvas
       choice(cell);
     }
   } 
   section.appendChild(container)
 }
+
 
 function handleMouseDown() {
   mouse = true;
@@ -140,5 +141,5 @@ function handleMouseDown() {
 function handleMouseUp() {
   mouse = false;
 }
-createGrid(20, 20, swatchSection, swatch);
+createGrid(18, 18, swatchSection, swatch);
 createGrid(25, 25, canvasSection, canvas);
