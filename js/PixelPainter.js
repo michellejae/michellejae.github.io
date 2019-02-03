@@ -4,6 +4,8 @@ const badBoy = document.createElement('div');
 badBoy.id = 'badBoy';
 document.body.appendChild(badBoy);
 
+
+
 const titleContainer = document.createElement('div');
 titleContainer.id = 'titleContainer';
 badBoy.appendChild(titleContainer)
@@ -31,7 +33,7 @@ contentContainers.appendChild(canvasSection);
 const swatchHeader = document.createElement('div');
 swatchHeader.id = 'swatchHeader';
 swatchSection.appendChild(swatchHeader);
-swatchHeader.innerHTML = 'swaaaatch'
+swatchHeader.innerHTML = 'swaaaatch';
 
 const canvasHeader = document.createElement('div');
 canvasHeader.id = 'canvasHeader';
@@ -40,7 +42,30 @@ canvasHeader.innerHTML = 'and canvas';
 
 const buttonContainer = document.createElement('div');
 buttonContainer.id = 'buttonContainer';
-swatchSection.appendChild(buttonContainer)
+swatchSection.appendChild(buttonContainer);
+
+const emptyContainer = document.createElement('div');
+emptyContainer.id = 'emptyContainer';
+badBoy.appendChild(emptyContainer);
+
+const intentionalText = document.createElement('div');
+intentionalText.id = 'intentionalText';
+intentionalText.className = 'bottomText'
+emptyContainer.appendChild(intentionalText);
+intentionalText.innerHTML = 'intentional';
+
+const emptyText = document.createElement('div');
+emptyText.id = 'emptyText';
+emptyText.className = 'bottomText'
+emptyContainer.appendChild(emptyText);
+emptyText.innerHTML = 'empty';
+
+const spaceText = document.createElement('div');
+spaceText.id = 'spaceText';
+spaceText.className = 'bottomText';
+emptyContainer.appendChild(spaceText);
+spaceText.innerHTML = 'space';
+
 
 let store;
 

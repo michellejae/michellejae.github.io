@@ -36,10 +36,24 @@ body{
   letter-spacing: 2px;
 }
 
+
+#canvasHeader{
+  font-size: 15px;
+  font-family: Arial;
+  margin-bottom: 5px;
+
+}
+
 #swatchSection{
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+#swatchHeader{
+  font-size: 15px;
+  order: 1;
+  font-family: Arial;
+  margin-bottom: 5px;
 }
 
 .container{
@@ -62,6 +76,39 @@ body{
   margin-left: 0px;
 }
 
+#emptyContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#intentionalText{
+  align-self: flex-start
+}
+
+#emptyText{
+  align-self: center;
+}
+
+#spaceText{
+  align-self: flex-end;
+}
+
+.bottomText{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  color: lightgray;
+}
+
+/* #erase {
+  align-self: center;
+}
+
+#clear {
+  align-self: flex-end;
+} */
 
 .row{
   display: table-row; 
@@ -73,19 +120,3 @@ body{
   height: 15px;
   width: 15px;
 }
-
-#swatchHeader{
-  font-size: 15px;
-  order: 1;
-  font-family: Arial;
-  margin-bottom: 5px;
-}
-#canvasHeader{
-  font-size: 15px;
-  font-family: Arial;
-  margin-bottom: 5px;
-
-}
-/* #ERASE{
-  margin-left: 185px;
-} */
