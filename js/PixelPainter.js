@@ -65,12 +65,7 @@ function remix(event){
   
 }
 
-// function backToWhite(event) {
-//   const cells = document.querySelectorAll('#canvasSection .cell');
-//   for (let i = 0; i < cells.length - 1; i++) {
-//     changeBgColor('#FFF', cells[i]);
-//   }
-// }
+
 
 
 //color
@@ -78,11 +73,6 @@ function canvas(cell) {
   cell.addEventListener("click", function () {
     cell.style.backgroundColor = store
   })
-  // cell.addEventListener('mouseover', function () {
-  //   if (mouse) {
-  //     cell.style.backgroundColor = store;
-  //   }
-  // })
 }
 
 //remix

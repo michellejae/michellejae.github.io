@@ -54,7 +54,7 @@ body{
   margin-top: 10px;
 }
 
-#erase, #clear{
+#erase, #clear, #remixButton{
   height: 40px;
   width: 65px;
   margin-top: 5px;
