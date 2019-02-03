@@ -59,6 +59,8 @@ body{
 .container{
   background-color: white;
   order: 2;
+  border: 1px solid rgb(54, 52, 52);
+  border-radius: 5px;
 }
 
 #buttonContainer{
@@ -74,6 +76,8 @@ body{
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0px;
+  border: 1px solid rgb(54, 52, 52);
+  border-radius: 5px;
 }
 
 #emptyContainer{
@@ -112,11 +116,23 @@ body{
 
 .row{
   display: table-row; 
-  border: 1px solid rgb(54, 52, 52); 
+  border-radius: 20px;
 }
 .cell{
   display: inline-block;
   border: 1px solid rgb(54, 52, 52);
-  height: 15px;
-  width: 15px;
+  
 }
+
+   #swatchSection > .container > .row >.cell{
+  height: 25px;
+  width: 25px;
+} 
+
+#canvasSection > .container > .row > .cell{
+  /* display: inline-block;  */
+  /* border: 1px solid rgb(54, 52, 52); */
+  height: 20px;
+  width: 20px;
+  /* background-color: blue; */
+} 

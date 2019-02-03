@@ -156,11 +156,13 @@ function createGrid(x, y, section, choice) {
   for (let i = 0; i < x; i++) {
     let row = document.createElement('div');
     row.className = 'row';
+    row.id = 'row';
     container.appendChild(row);
 
     for (let j = 0; j < y; j++) {
       let cell = document.createElement('div');
       cell.className = 'cell';
+      cell.id = 'cell';
       row.appendChild(cell);
       choice(cell);
     }
@@ -176,5 +178,5 @@ function handleMouseDown() {
 function handleMouseUp() {
   mouse = false;
 }
-createGrid(18, 18, swatchSection, swatch);
-createGrid(25, 25, canvasSection, canvas);
+createGrid(10, 10, swatchSection, swatch);
+createGrid(18, 18, canvasSection, canvas);
