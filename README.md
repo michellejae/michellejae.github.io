@@ -28,3 +28,11 @@ Do not edit the `index.html` file. You will generate all of your html markup usi
 5. Implement a fill option that fills a shape with a color.
 5. Write a function that saves the data pixel grid.
 6. Deploy the app using [Github pages](https://help.github.com/articles/creating-project-pages-manually/)
+
+<div>todo
+<ul>
+  <li>Need to write a function that keeps the same color from appearing on swatch</li>
+  <li>when going to mobile swatch and canvas lose space between and canvas buggs out</li>
+</ul>
+
+</div>
